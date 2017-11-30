@@ -1,0 +1,47 @@
+.header {
+  .color-gradient-primary();
+
+  .logo {
+    .color-white();
+    .border(@color-black, 0px);
+    .transition(all 0.25s ease-in-out);
+
+    position: relative;
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 4px 0px 7px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 3px;
+
+    .logo-hovered {
+      .transition(all 0.25s ease-in-out);
+      .transform(translate3d(0px, 100%, 0px));
+      .color-dark-gray();
+
+      position: absolute;
+      top: 0px; left: 0px;
+      height: 100%; width: 100%;
+      overflow: hidden;
+    }
+
+    &:hover {
+      .color-dark-gray();
+    }
+  }
+
+  .item {
+    .animate(drop-fade-in 0.25s ease-in-out forwards);
+    .transition(all .25s ease-in-out);
+
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+    transform: translate3d(0px, -100%, 0px);
+
+    &:hover {
+      .color-dark-gray();
+    }
+  }
+}

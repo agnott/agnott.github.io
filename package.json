@@ -17,7 +17,10 @@
     "url": "https://github.com/agnott/agnott.github.io/issues"
   },
   "homepage": "https://github.com/agnott/agnott.github.io#readme",
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.5.9",
+    "vue-router": "^3.0.1"
+  },
   "devDependencies": {
     "ajv": "^5.3.0",
     "babel-core": "^6.25.0",
@@ -33,6 +36,8 @@
     "less-loader": "^4.0.5",
     "mocha": "^4.0.1",
     "style-loader": "^0.18.2",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.5.9",
     "webpack": "^3.5.4",
     "webpack-dev-server": "^2.7.1"
   }

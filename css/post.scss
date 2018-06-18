@@ -1,0 +1,19 @@
+.post__container {
+  position: relative;
+  min-height: 100%; width: 100%;
+  padding-top: 5rem;
+
+  .post__sections {
+    position: fixed;
+    top: 5rem;
+    width: 13rem;
+    padding: 0rem var(--spacing-4);
+  }
+
+  .post__content {
+    width: 100%; max-width: 50rem;
+    padding: 0rem var(--spacing-4) 0rem calc(13rem + var(--spacing-4));
+
+    p { text-align: justify; }
+  }
+}

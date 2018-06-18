@@ -2,8 +2,7 @@ const webpack = require('webpack');
 
 const PATHS = {
   INPUT: {
-    JS: `${__dirname}/js`,
-    CSS: `${__dirname}/css`
+    JS: `${__dirname}/js`
   },
   OUTPUT: `${__dirname}`
 };
@@ -11,7 +10,6 @@ const PATHS = {
 module.exports = {
   entry: [
     `${PATHS.INPUT.JS}/main.js`,
-    `${PATHS.INPUT.CSS}/main.less`
   ],
   output: {
     path: PATHS.OUTPUT,
@@ -21,19 +19,17 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        include: PATHS.INPUT.JS,
         loader: 'babel-loader',
         query: {
-          presets: ['env', 'react'],
-          plugins: ['transform-object-rest-spread']
+          presets: ['@babel/preset-env', '@babel/preset-react'],
+          plugins: [require('@babel/plugin-proposal-object-rest-spread')]
         }
       }, {
-        test: /\.less$/,
-        include: PATHS.INPUT.CSS,
+        test: /\.scss$/,
         loaders: [
           'style-loader',
           'css-loader',
-          'less-loader'
+          'sass-loader'
         ]
       }
     ]

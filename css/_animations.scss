@@ -1,0 +1,48 @@
+.animation__container {
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes rise-in {
+  0% {
+    transform: translate(0%, 100%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.animation--rise-in {
+  animation: rise-in var(--animation-options-slow) both;
+}
+
+@keyframes rise-fade-in {
+  0% {
+    transform: translate(0%, 100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+.animation--rise-fade-in {
+  animation: rise-fade-in var(--animation-options-slow) both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation--fade-in {
+  animation: fade-in var(--animation-options-slow) both;
+}

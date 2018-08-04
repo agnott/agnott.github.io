@@ -25,7 +25,7 @@ module.exports = {
           plugins: [require('@babel/plugin-proposal-object-rest-spread')]
         }
       }, {
-        test: /\.scss$/,
+        test: /\.css$/,
         loaders: [
           'style-loader',
           'css-loader',

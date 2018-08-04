@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import FlashBang from './flashbang/flashbang';
-import '../css/main.scss';
+import '../css/main.css';
 
 import App from './components/App';
 

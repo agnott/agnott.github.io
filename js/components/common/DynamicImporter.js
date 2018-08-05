@@ -9,23 +9,18 @@ class DynamicImport extends React.Component {
   }
 
   componentDidMount() {
-    console.log('mounting');
-    import(/* webpackMode: "lazy" */ `../../pages/${this.props.type}/${this.props.name}`).then(d => {
-      console.log(d);
+    const type = this.props.type || this.props.match.params.type;
+    const name = this.props.name || this.props.match.params.name;
+    const transformedName = name.replace(/(?:^|-)([a-z0-9A-Z])/g, (m, p) => p.toUpperCase());
+
+    import(/* webpackMode: "lazy" */ `../../pages/${type}/${transformedName}`).then(d => {
       this.component = d.default;
       this.setState({ loaded: true });
     });
   }
 
   render() {
-    return (
-      <div>
-        Dynamic Importer
-        {
-          this.state.loaded && <this.component />
-        }
-      </div>
-    );
+    return this.state.loaded ? <this.component {...this.props} /> : null;
   }
 }
 

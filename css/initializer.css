@@ -1,0 +1,122 @@
+.initializer__container {
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+
+.initializer {
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+@keyframes initializer__circle-container--drop-in {
+  0% {
+    transform: translate(0%, -500%);
+  }
+
+  90% {
+    transform: translate(0%, 20%);
+  }
+
+  98% {
+    transform: translate(0%, -5%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes initializer__circle-background--pulse {
+  0% {
+    transform: scale(0);
+  }
+
+  12% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(250);
+  }
+
+  80%, 100% {
+    transform: scale(250);
+    opacity: 0;
+  }
+}
+
+@keyframes initializer__circle--pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  8% {
+    transform: scale(1.25);
+  }
+
+  10% {
+    transform: scale(0.9);
+  }
+
+  15%, 100% {
+    transform: scale(1);
+  }
+}
+
+.initializer__circle-container {
+  animation: initializer__circle-container--drop-in ease-in-out .3s .5s both;
+}
+
+.initializer__circle-background {
+  position: absolute;
+  height: 12rem; width: 12rem;
+  background-color: var(--color-primary-default);
+  opacity: 0.5;
+  border-radius: 50%;
+  animation: initializer__circle-background--pulse ease-in-out 3s 1s both;
+}
+
+.initializer__circle {
+  height: 12rem; width: 12rem;
+
+  background-color: var(--color-primary-default);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  animation: initializer__circle--pulse ease-in-out 3s 1s both;
+}
+
+.initializer__circle::after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-primary-foreground);
+  opacity: 0.25;
+  width: 100%; height: 8.5rem;
+  z-index: -1;
+  transform: rotate(-15deg);
+}
+
+.initializer__text {
+  position: relative;
+  top: -.2rem; left: -.1rem;
+
+  color: var(--color-primary-foreground);
+  font-size: 8rem;
+  font-weight: var(--font-weight-extra-bold);
+  font-family: var(--font-family-secondary);
+  letter-spacing: -.5rem;
+  transform: rotate(-15deg);
+}

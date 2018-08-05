@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: var(--spacing-4);
+  z-index: 1;
+  position: fixed;
+  top: 0px; left: 0px;
+  width: 100%;
+}
+
+.header__link-container {
+  display: flex;
+  align-content: center;
+}
+
+.header .header__link {
+  margin: var(--spacing-2);
+}
+
+.header .header__link--bold {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: var(--font-size-3);
+}

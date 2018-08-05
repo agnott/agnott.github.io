@@ -1,17 +1,23 @@
 import React from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 import Header from './header/Header';
-
-import DynamicImporter from './common/DynamicImporter';
+import Routes from './Routes';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { loaded: false };
+  }
+
   render() {
+
     return (
       <Router>
         <React.Fragment>
           <Header />
-          <Route path="/experiment" component={(props) => <DynamicImporter {...props} type="experiments" name="SampleExperiment" />} />
+          <Routes />
         </React.Fragment>
       </Router>
     );

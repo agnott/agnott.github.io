@@ -1,7 +1,25 @@
 :root {
-  --color-background-default: rgb(205, 255, 249);
-  --color-foreground-default: rgb(135, 0, 163);
-  --color-primary-default: rgb(133, 189, 255);
+  --color-background-source: 255, 255, 255;
+  --color-foreground-source: 45, 45, 45;
+
+  --color-background: rgb(var(--color-background-source));
+  --color-foreground: rgb(var(--color-foreground-source));
+
+  --color-primary-background-source: 41, 164, 207;
+  --color-primary-default-source: 52, 188, 207;
+  --color-primary-foreground-source: 255, 255, 255;
+
+  --color-primary-background: rgb(var(--color-primary-background-source));
+  --color-primary-default: rgb(var(--color-primary-default-source));
+  --color-primary-foreground: rgb(var(--color-primary-foreground-source));
+
+  --color-secondary-background-source: 186, 88, 33;
+  --color-secondary-default-source: 231, 103, 31;
+  --color-secondary-foreground-source: 255, 255, 255;
+
+  --color-secondary-background: rgb(var(--color-secondary-background-source));
+  --color-secondary-default: rgb(var(--color-secondary-default-source));
+  --color-secondary-foreground: rgb(var(--color-secondary-foreground-source));
 
   --spacing-1: 0.25rem;
   --spacing-2: 0.50rem;
@@ -14,6 +32,10 @@
 
   --font-family-primary: 'Open Sans', sans-serif;
   --font-family-secondary: 'Assistant', sans-serif;
+
+  --font-weight-default: 400;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
 
   --font-size-default: 1rem;
   --font-size-1: 0.75rem;

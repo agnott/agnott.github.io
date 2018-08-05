@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/agnott/agnott.github.io#readme",
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.56",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",

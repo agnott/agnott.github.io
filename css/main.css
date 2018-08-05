@@ -14,8 +14,8 @@ body {
 }
 
 ::selection {
-  color: var(--color-background);
-  background: var(--color-foreground);
+  color: var(--color-secondary-foreground);
+  background: var(--color-secondary-default);
 }
 
 #viewport {

@@ -5,30 +5,31 @@
   --color-background: rgb(var(--color-background-source));
   --color-foreground: rgb(var(--color-foreground-source));
 
-  --color-primary-background-source: 41, 164, 207;
-  --color-primary-default-source: 52, 188, 207;
-  --color-primary-foreground-source: 255, 255, 255;
+  --color-primary-background-source: 36, 170, 204;
+  --color-primary-default-source: 45, 213, 255;
+  --color-primary-foreground-source: 45, 45, 45;
 
   --color-primary-background: rgb(var(--color-primary-background-source));
   --color-primary-default: rgb(var(--color-primary-default-source));
   --color-primary-foreground: rgb(var(--color-primary-foreground-source));
 
-  --color-secondary-background-source: 186, 88, 33;
-  --color-secondary-default-source: 231, 103, 31;
-  --color-secondary-foreground-source: 255, 255, 255;
+  --color-secondary-background-source: 206, 136, 55;
+  --color-secondary-default-source: 255, 171, 76;
+  --color-secondary-foreground-source: 45, 45, 45;
 
   --color-secondary-background: rgb(var(--color-secondary-background-source));
   --color-secondary-default: rgb(var(--color-secondary-default-source));
   --color-secondary-foreground: rgb(var(--color-secondary-foreground-source));
 
+  --spacing-0: 0rem;
   --spacing-1: 0.25rem;
   --spacing-2: 0.50rem;
   --spacing-3: 0.75rem;
   --spacing-4: 1.00rem;
   --spacing-5: 1.25rem;
-  --spacing-6: 1.50rem;
-  --spacing-7: 1.75rem;
-  --spacing-8: 2.00rem;
+  --spacing-6: 2rem;
+  --spacing-7: 4rem;
+  --spacing-8: 8rem;
 
   --font-family-primary: 'Open Sans', sans-serif;
   --font-family-secondary: 'Assistant', sans-serif;
@@ -52,4 +53,18 @@
   --animation-options-fast: var(--animation-duration-fast) ease-in-out;
   --animation-options-default: var(--animation-duration-default) ease-in-out;
   --animation-options-slow: var(--animation-duration-slow) ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --spacing-0: 0rem;
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.50rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1.00rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-7: 1.75rem;
+    --spacing-8: 2rem;
+  }
 }

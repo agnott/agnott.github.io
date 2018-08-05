@@ -10,7 +10,7 @@ class DynamicImport extends React.Component {
 
   componentDidMount() {
     const type = this.props.type || this.props.match.params.type;
-    const name = this.props.name || this.props.match.params.name;
+    const name = this.props.name || this.props.match.params.name || '';
     const transformedName = name.replace(/(?:^|-)([a-z0-9A-Z])/g, (m, p) => p.toUpperCase());
 
     import(/* webpackMode: "lazy" */ `../../pages/${type}/${transformedName}`).then(d => {

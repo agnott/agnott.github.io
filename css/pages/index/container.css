@@ -1,0 +1,10 @@
+.index-page__container {
+  margin-top: 8rem;
+  padding: var(--spacing-0) var(--spacing-8);
+}
+
+.index-page__title {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: var(--font-size-header);
+}

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --watch-poll",
-    "build": "webpack"
+    "build": "webpack",
+    "build-deploy": "webpack; git add ./build/; git commit -m \"BLD: Automated build\"; git push origin master"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/agnott/agnott.github.io#readme",
   "dependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.56",
+    "lodash.debounce": "^4.0.8",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",

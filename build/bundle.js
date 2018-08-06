@@ -14371,7 +14371,7 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, ":root {\n  --color-background-source: 255, 255, 255;\n  --color-foreground-source: 45, 45, 45;\n\n  --color-background: rgb(var(--color-background-source));\n  --color-foreground: rgb(var(--color-foreground-source));\n\n  --color-primary-background-source: 36, 170, 204;\n  --color-primary-default-source: 45, 213, 255;\n  --color-primary-foreground-source: 45, 45, 45;\n\n  --color-primary-background: rgb(var(--color-primary-background-source));\n  --color-primary-default: rgb(var(--color-primary-default-source));\n  --color-primary-foreground: rgb(var(--color-primary-foreground-source));\n\n  --color-secondary-background-source: 206, 136, 55;\n  --color-secondary-default-source: 255, 171, 76;\n  --color-secondary-foreground-source: 45, 45, 45;\n\n  --color-secondary-background: rgb(var(--color-secondary-background-source));\n  --color-secondary-default: rgb(var(--color-secondary-default-source));\n  --color-secondary-foreground: rgb(var(--color-secondary-foreground-source));\n\n  --spacing-0: 0rem;\n  --spacing-1: 0.25rem;\n  --spacing-2: 0.50rem;\n  --spacing-3: 0.75rem;\n  --spacing-4: 1.00rem;\n  --spacing-5: 1.25rem;\n  --spacing-6: 2rem;\n  --spacing-7: 4rem;\n  --spacing-8: 8rem;\n\n  --font-family-primary: 'Open Sans', sans-serif;\n  --font-family-secondary: 'Assistant', sans-serif;\n\n  --font-weight-default: 400;\n  --font-weight-bold: 700;\n  --font-weight-extra-bold: 800;\n\n  --font-size-default: 1rem;\n  --font-size-1: 0.75rem;\n  --font-size-2: 1.00rem;\n  --font-size-3: 1.50rem;\n  --font-size-4: 2.00rem;\n  --font-size-5: 2.50rem;\n  --font-size-header: 4rem;\n\n  --animation-duration-fast:    .1s;\n  --animation-duration-default: .2s;\n  --animation-duration-slow:    .5s;\n\n  --animation-options-fast: var(--animation-duration-fast) ease-in-out;\n  --animation-options-default: var(--animation-duration-default) ease-in-out;\n  --animation-options-slow: var(--animation-duration-slow) ease-in-out;\n}\n\n@media screen and (max-width: 800px) {\n  :root {\n    --spacing-0: 0rem;\n    --spacing-1: 0.25rem;\n    --spacing-2: 0.50rem;\n    --spacing-3: 0.75rem;\n    --spacing-4: 1.00rem;\n    --spacing-5: 1.25rem;\n    --spacing-6: 1.5rem;\n    --spacing-7: 1.75rem;\n    --spacing-8: 2rem;\n  }\n}\n", ""]);
+exports.push([module.i, ":root {\n  --color-background-source: 255, 255, 255;\n  --color-foreground-source: 45, 45, 45;\n  --color-foreground-muted-source: 120, 120, 120;\n\n  --color-background: rgb(var(--color-background-source));\n  --color-foreground: rgb(var(--color-foreground-source));\n  --color-foreground-muted: rgb(var(--color-foreground-muted-source));\n\n  --color-primary-background-source: 36, 170, 204;\n  --color-primary-default-source: 40, 190, 225;\n  --color-primary-foreground-source: 45, 45, 45;\n\n  --color-primary-background: rgb(var(--color-primary-background-source));\n  --color-primary-default: rgb(var(--color-primary-default-source));\n  --color-primary-foreground: rgb(var(--color-primary-foreground-source));\n\n  --color-secondary-background-source: 206, 136, 55;\n  --color-secondary-default-source: 255, 171, 76;\n  --color-secondary-foreground-source: 45, 45, 45;\n\n  --color-secondary-background: rgb(var(--color-secondary-background-source));\n  --color-secondary-default: rgb(var(--color-secondary-default-source));\n  --color-secondary-foreground: rgb(var(--color-secondary-foreground-source));\n\n  --spacing-0: 0rem;\n  --spacing-1: 0.25rem;\n  --spacing-2: 0.50rem;\n  --spacing-3: 0.75rem;\n  --spacing-4: 1.00rem;\n  --spacing-5: 1.25rem;\n  --spacing-6: 2rem;\n  --spacing-7: 4rem;\n  --spacing-8: 8rem;\n\n  --font-family-primary: 'Open Sans', sans-serif;\n  --font-family-secondary: 'Assistant', sans-serif;\n\n  --font-weight-default: 400;\n  --font-weight-bold: 700;\n  --font-weight-extra-bold: 800;\n\n  --font-size-default: 1rem;\n  --font-size-1: 0.75rem;\n  --font-size-2: 1.00rem;\n  --font-size-3: 1.50rem;\n  --font-size-4: 2.00rem;\n  --font-size-5: 2.50rem;\n  --font-size-6: 2.75rem;\n  --font-size-header: 4rem;\n\n  --animation-duration-fast:    .1s;\n  --animation-duration-default: .2s;\n  --animation-duration-slow:    .5s;\n\n  --animation-options-fast: var(--animation-duration-fast) ease-in-out;\n  --animation-options-default: var(--animation-duration-default) ease-in-out;\n  --animation-options-slow: var(--animation-duration-slow) ease-in-out;\n}\n\n@media screen and (max-width: 800px) {\n  :root {\n    --spacing-0: 0rem;\n    --spacing-1: 0.25rem;\n    --spacing-2: 0.50rem;\n    --spacing-3: 0.75rem;\n    --spacing-4: 1.00rem;\n    --spacing-5: 1.25rem;\n    --spacing-6: 1.5rem;\n    --spacing-7: 1.75rem;\n    --spacing-8: 2rem;\n  }\n}\n", ""]);
 
 // exports
 
@@ -17504,13 +17504,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 var Header =
 /*#__PURE__*/
@@ -17525,38 +17525,29 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Header).call(this, props));
     _this.state = {
       background: false
-    };
-    _this.onDocumentScroll = _this.onDocumentScroll.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    }; // this.onDocumentScroll = this.onDocumentScroll.bind(this);
+
     return _this;
-  }
+  } // componentDidMount() {
+  //   document.addEventListener('scroll', this.onDocumentScroll);
+  //   this.onDocumentScroll();
+  // }
+  //
+  // componentWillUnmount() {
+  //   document.removeEventListener('scroll', this.onDocumentScroll);
+  // }
+  //
+  // onDocumentScroll() {
+  //   const offsetY = window.pageYOffset;
+  //   if (offsetY > 150 && !this.state.background) {
+  //     this.setState({ background: true });
+  //   } else if (offsetY <= 150 && this.state.background) {
+  //     this.setState({ background: false });
+  //   }
+  // }
+
 
   _createClass(Header, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      document.addEventListener('scroll', this.onDocumentScroll);
-      this.onDocumentScroll();
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      document.removeEventListener('scroll', this.onDocumentScroll);
-    }
-  }, {
-    key: "onDocumentScroll",
-    value: function onDocumentScroll() {
-      var offsetY = window.pageYOffset;
-
-      if (offsetY > 150 && !this.state.background) {
-        this.setState({
-          background: true
-        });
-      } else if (offsetY <= 150 && this.state.background) {
-        this.setState({
-          background: false
-        });
-      }
-    }
-  }, {
     key: "render",
     value: function render() {
       return _react.default.createElement("header", {
@@ -17623,7 +17614,7 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, ".header {\n  display: flex;\n  align-content: center;\n  justify-content: space-between;\n  padding: var(--spacing-4);\n  z-index: 1;\n  position: fixed;\n  top: 0px; left: 0px;\n  width: 100%;\n  background: transparent;\n  border-bottom: var(--spacing-0) solid transparent;\n  transition: all var(--animation-duration-slow) ease-in-out;\n}\n\n.header--shrunk {\n  background-color: var(--color-background);\n  padding: var(--spacing-1);\n  border-bottom: var(--spacing-2) solid var(--color-secondary-default);\n}\n\n.header__link-container {\n  display: flex;\n  align-items: center;\n}\n\n.header .header__link {\n  padding: 0 var(--spacing-2);\n  margin: 0 var(--spacing-1);\n  border-radius: var(--spacing-1);\n  cursor: pointer;\n  transition: all var(--animation-duration-default) ease-in-out;\n}\n\n.header .header__link:hover, .header .header__link:active {\n  color: rgba(var(--color-foreground-source), 0.5);\n}\n\n.header .header__link--bold {\n  font-family: var(--font-family-secondary);\n  font-weight: var(--font-weight-extra-bold);\n  font-size: var(--font-size-3);\n}\n", ""]);
+exports.push([module.i, ".header {\n  display: flex;\n  align-content: center;\n  justify-content: space-between;\n  padding: var(--spacing-4);\n  z-index: 1;\n  position: fixed;\n  top: 0px; left: 0px;\n  width: 100%;\n  background: var(--color-background);\n  border-bottom: var(--spacing-0) solid transparent;\n  transition: all var(--animation-duration-slow) ease-in-out;\n}\n\n.header--shrunk {\n  background-color: var(--color-background);\n  padding: var(--spacing-1);\n  border-bottom: var(--spacing-2) solid var(--color-secondary-default);\n}\n\n.header__link-container {\n  display: flex;\n  align-items: center;\n}\n\n.header .header__link {\n  padding: 0 var(--spacing-2);\n  margin: 0 var(--spacing-1);\n  border-radius: var(--spacing-1);\n  cursor: pointer;\n  transition: all var(--animation-duration-default) ease-in-out;\n}\n\n.header .header__link:hover, .header .header__link:active {\n  color: var(--color-primary-default);\n}\n\n.header .header__link--bold {\n  font-family: var(--font-family-secondary);\n  font-weight: var(--font-weight-extra-bold);\n  font-size: var(--font-size-3);\n}\n", ""]);
 
 // exports
 

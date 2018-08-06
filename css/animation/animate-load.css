@@ -1,0 +1,14 @@
+@keyframes animate__container--drop-fade-in {
+  0% {
+    transform: translate(0%, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
+
+.animate__container--load {
+  animation: animate__container--drop-fade-in var(--animation-duration-default) ease-in-out 0s backwards;
+}

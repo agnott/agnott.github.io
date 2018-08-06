@@ -1,12 +1,14 @@
 :root {
   --color-background-source: 255, 255, 255;
   --color-foreground-source: 45, 45, 45;
+  --color-foreground-muted-source: 120, 120, 120;
 
   --color-background: rgb(var(--color-background-source));
   --color-foreground: rgb(var(--color-foreground-source));
+  --color-foreground-muted: rgb(var(--color-foreground-muted-source));
 
   --color-primary-background-source: 36, 170, 204;
-  --color-primary-default-source: 45, 213, 255;
+  --color-primary-default-source: 40, 190, 225;
   --color-primary-foreground-source: 45, 45, 45;
 
   --color-primary-background: rgb(var(--color-primary-background-source));
@@ -44,6 +46,7 @@
   --font-size-3: 1.50rem;
   --font-size-4: 2.00rem;
   --font-size-5: 2.50rem;
+  --font-size-6: 2.75rem;
   --font-size-header: 4rem;
 
   --animation-duration-fast:    .1s;

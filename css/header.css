@@ -7,7 +7,7 @@
   position: fixed;
   top: 0px; left: 0px;
   width: 100%;
-  background: transparent;
+  background: var(--color-background);
   border-bottom: var(--spacing-0) solid transparent;
   transition: all var(--animation-duration-slow) ease-in-out;
 }
@@ -32,7 +32,7 @@
 }
 
 .header .header__link:hover, .header .header__link:active {
-  color: rgba(var(--color-foreground-source), 0.5);
+  color: var(--color-primary-default);
 }
 
 .header .header__link--bold {

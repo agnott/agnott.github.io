@@ -8,26 +8,26 @@ class Header extends React.Component {
 
     this.state = { background: false };
 
-    this.onDocumentScroll = this.onDocumentScroll.bind(this);
+    // this.onDocumentScroll = this.onDocumentScroll.bind(this);
   }
 
-  componentDidMount() {
-    document.addEventListener('scroll', this.onDocumentScroll);
-    this.onDocumentScroll();
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('scroll', this.onDocumentScroll);
-  }
-
-  onDocumentScroll() {
-    const offsetY = window.pageYOffset;
-    if (offsetY > 150 && !this.state.background) {
-      this.setState({ background: true });
-    } else if (offsetY <= 150 && this.state.background) {
-      this.setState({ background: false });
-    }
-  }
+  // componentDidMount() {
+  //   document.addEventListener('scroll', this.onDocumentScroll);
+  //   this.onDocumentScroll();
+  // }
+  //
+  // componentWillUnmount() {
+  //   document.removeEventListener('scroll', this.onDocumentScroll);
+  // }
+  //
+  // onDocumentScroll() {
+  //   const offsetY = window.pageYOffset;
+  //   if (offsetY > 150 && !this.state.background) {
+  //     this.setState({ background: true });
+  //   } else if (offsetY <= 150 && this.state.background) {
+  //     this.setState({ background: false });
+  //   }
+  // }
 
   render() {
     return (

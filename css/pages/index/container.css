@@ -1,10 +1,11 @@
 .index-page__container {
-  margin-top: 6rem;
-  padding: var(--spacing-0) var(--spacing-7);
+  margin-top: calc(1.5 * var(--spacing-5));
+  padding: var(--spacing-0) var(--spacing-5);
 }
 
 .index-page__title {
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-extra-bold);
-  font-size: var(--font-size-header);
+  font-size: var(--font-size-6);
+  flex-grow: 0;
 }

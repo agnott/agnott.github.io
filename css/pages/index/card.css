@@ -1,5 +1,5 @@
 .index-page__card {
-  margin: var(--spacing-4);
+  margin: var(--spacing-3);
   padding: var(--spacing-2);
   position: relative;
   color: var(--color-foreground);
@@ -17,6 +17,7 @@
   top: 0px; left: 0px;
   height: 100%; width: 15rem;
   border-top: var(--spacing-1) solid var(--color-foreground);
+  z-index: -1;
 }
 
 .index-page__card-title {
@@ -27,7 +28,6 @@
 
 .index-page__card-subtitle {
   font-size: var(--font-size-3);
-  /*font-family: var(--font-family-secondary);*/
 }
 
 .index-page__card-date {

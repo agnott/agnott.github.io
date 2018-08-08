@@ -6,10 +6,10 @@ import IndexPageContainer from '../../components/common/index/IndexPageContainer
 
 import data from './data';
 
-class LabsIndex extends React.Component {
+class BlogsIndex extends React.Component {
   render() {
     return (
-      <IndexPageContainer title="Labs">
+      <IndexPageContainer title="Blogs">
         {
           data.map((article, i) => (
             <AnimateLoad key={article.id} offset={i * 125}>
@@ -22,4 +22,4 @@ class LabsIndex extends React.Component {
   }
 }
 
-export default LabsIndex;
+export default BlogsIndex;

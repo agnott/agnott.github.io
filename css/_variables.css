@@ -23,15 +23,14 @@
   --color-secondary-default: rgb(var(--color-secondary-default-source));
   --color-secondary-foreground: rgb(var(--color-secondary-foreground-source));
 
+  --spacing-factor: 2;
   --spacing-0: 0rem;
   --spacing-1: 0.25rem;
-  --spacing-2: 0.50rem;
-  --spacing-3: 0.75rem;
-  --spacing-4: 1.00rem;
-  --spacing-5: 1.25rem;
-  --spacing-6: 2rem;
-  --spacing-7: 4rem;
-  --spacing-8: 8rem;
+  --spacing-2: calc(var(--spacing-factor) * var(--spacing-1));
+  --spacing-3: calc(var(--spacing-factor) * var(--spacing-2));
+  --spacing-4: calc(var(--spacing-factor) * var(--spacing-3));
+  --spacing-5: calc(var(--spacing-factor) * var(--spacing-4));
+  --spacing-6: calc(var(--spacing-factor) * var(--spacing-5));
 
   --font-family-primary: 'Open Sans', sans-serif;
   --font-family-secondary: 'Assistant', sans-serif;
@@ -40,14 +39,14 @@
   --font-weight-bold: 700;
   --font-weight-extra-bold: 800;
 
-  --font-size-default: 1rem;
-  --font-size-1: 0.75rem;
-  --font-size-2: 1.00rem;
-  --font-size-3: 1.50rem;
-  --font-size-4: 2.00rem;
-  --font-size-5: 2.50rem;
-  --font-size-6: 2.75rem;
-  --font-size-header: 4rem;
+  --font-size-factor: 1.55;
+
+  --font-size-1: 0.50rem;
+  --font-size-2: calc(var(--font-size-factor) * var(--font-size-1));
+  --font-size-3: calc(var(--font-size-factor) * var(--font-size-2));
+  --font-size-4: calc(var(--font-size-factor) * var(--font-size-3));
+  --font-size-5: calc(var(--font-size-factor) * var(--font-size-4));
+  --font-size-6: calc(var(--font-size-factor) * var(--font-size-5));
 
   --animation-duration-fast:    .1s;
   --animation-duration-default: .2s;
@@ -60,14 +59,6 @@
 
 @media screen and (max-width: 800px) {
   :root {
-    --spacing-0: 0rem;
-    --spacing-1: 0.25rem;
-    --spacing-2: 0.50rem;
-    --spacing-3: 0.75rem;
-    --spacing-4: 1.00rem;
-    --spacing-5: 1.25rem;
-    --spacing-6: 1.5rem;
-    --spacing-7: 1.75rem;
-    --spacing-8: 2rem;
+    --spacing-factor: 1.5;
   }
 }

@@ -1,6 +1,81 @@
-webpackJsonp([0],{
+webpackJsonp([0,2],{
 
-/***/ 15:
+/***/ 16:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = [{
+  id: 0,
+  title: 'True Confessions of a Tech Guy',
+  url: '/labs/sample-lab',
+  tags: [],
+  subtitle: 'How tech addiction affects us all.',
+  createdAt: new Date('2018-08-05T21:38:47.045Z'),
+  updatedAt: new Date('2018-08-05T21:38:47.045Z')
+}, {
+  id: 1,
+  title: 'Digital Democracies in the Age of Internet of Things',
+  url: '/labs/sample-lab',
+  tags: [],
+  subtitle: 'This is a sample experiment',
+  createdAt: new Date('2018-08-05T21:38:47.045Z'),
+  updatedAt: new Date('2018-08-05T21:38:47.045Z')
+}, {
+  id: 2,
+  title: 'Digital Democracies in the Age of Internet of Things',
+  url: '/labs/sample-lab',
+  tags: [],
+  subtitle: 'This is a sample experiment',
+  createdAt: new Date('2018-08-01T21:38:47.045Z'),
+  updatedAt: new Date('2018-08-01T21:38:47.045Z')
+}, {
+  id: 3,
+  title: 'Digital Democracies in the Age of Internet of Things',
+  url: '/labs/sample-lab',
+  tags: [],
+  subtitle: 'This is a sample experiment',
+  createdAt: new Date('2018-07-25T21:38:47.045Z'),
+  updatedAt: new Date('2018-07-25T21:38:47.045Z')
+}, {
+  id: 4,
+  title: 'Digital Democracies in the Age of Internet of Things',
+  url: '/labs/sample-lab',
+  tags: [],
+  subtitle: 'This is a sample experiment',
+  createdAt: new Date('2018-08-05T21:38:47.045Z'),
+  updatedAt: new Date('2018-08-05T21:38:47.045Z')
+}, {
+  id: 5,
+  title: 'Digital Democracies in the Age of Internet of Things',
+  url: '/labs/sample-lab',
+  tags: [],
+  subtitle: 'This is a sample experiment',
+  createdAt: new Date('2018-08-05T21:38:47.045Z'),
+  updatedAt: new Date('2018-08-05T21:38:47.045Z')
+}, {
+  id: 6,
+  title: 'Digital Democracies in the Age of Internet of Things',
+  url: '/labs/sample-lab',
+  tags: [],
+  subtitle: 'This is a sample experiment',
+  createdAt: new Date('2018-07-05T21:38:47.045Z'),
+  updatedAt: new Date('2018-07-05T21:38:47.045Z')
+}].sort(function (a, b) {
+  return b.createdAt - a.createdAt;
+});
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ 20:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13,11 +88,13 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _AnimateLoad = _interopRequireDefault(__webpack_require__(87));
+var _AnimateLoad = _interopRequireDefault(__webpack_require__(88));
 
-var _IndexPageCard = _interopRequireDefault(__webpack_require__(90));
+var _IndexPageCard = _interopRequireDefault(__webpack_require__(91));
 
-var _IndexPageContainer = _interopRequireDefault(__webpack_require__(94));
+var _IndexPageContainer = _interopRequireDefault(__webpack_require__(95));
+
+var _data = _interopRequireDefault(__webpack_require__(16));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39,57 +116,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var articles = [{
-  id: 0,
-  title: 'True Confessions of a Tech Guy',
-  subtitle: 'How tech addiction affects us all.',
-  createdAt: new Date('2018-08-05T21:38:47.045Z'),
-  updatedAt: new Date('2018-08-05T21:38:47.045Z'),
-  released: true
-}, {
-  id: 1,
-  title: 'Digital Democracies in the Age of Internet of Things',
-  subtitle: 'This is a sample experiment',
-  createdAt: new Date('2018-08-05T21:38:47.045Z'),
-  updatedAt: new Date('2018-08-05T21:38:47.045Z'),
-  released: true
-}, {
-  id: 2,
-  title: 'Digital Democracies in the Age of Internet of Things',
-  subtitle: 'This is a sample experiment',
-  createdAt: new Date('2018-08-01T21:38:47.045Z'),
-  updatedAt: new Date('2018-08-01T21:38:47.045Z'),
-  released: true
-}, {
-  id: 3,
-  title: 'Digital Democracies in the Age of Internet of Things',
-  subtitle: 'This is a sample experiment',
-  createdAt: new Date('2018-07-25T21:38:47.045Z'),
-  updatedAt: new Date('2018-07-25T21:38:47.045Z'),
-  released: true
-}, {
-  id: 4,
-  title: 'Digital Democracies in the Age of Internet of Things',
-  subtitle: 'This is a sample experiment',
-  createdAt: new Date('2018-08-05T21:38:47.045Z'),
-  updatedAt: new Date('2018-08-05T21:38:47.045Z'),
-  released: true
-}];
-var released = articles.filter(function (a) {
-  return a.released;
-}).sort(function (a, b) {
-  return b.createdAt - a.createdAt;
-});
-
 var LabsIndex =
 /*#__PURE__*/
 function (_React$Component) {
   _inherits(LabsIndex, _React$Component);
 
-  function LabsIndex(props) {
+  function LabsIndex() {
     _classCallCheck(this, LabsIndex);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(LabsIndex).call(this, props));
+    return _possibleConstructorReturn(this, _getPrototypeOf(LabsIndex).apply(this, arguments));
   }
 
   _createClass(LabsIndex, [{
@@ -97,7 +132,7 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement(_IndexPageContainer.default, {
         title: "Labs"
-      }, released.map(function (article, i) {
+      }, _data.default.map(function (article, i) {
         return _react.default.createElement(_AnimateLoad.default, {
           key: article.id,
           offset: i * 125
@@ -114,7 +149,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 87:
+/***/ 88:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -127,7 +162,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-__webpack_require__(88);
+__webpack_require__(89);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -180,13 +215,13 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(89);
+var content = __webpack_require__(90);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -194,7 +229,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(22)(content, options);
+var update = __webpack_require__(27)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -212,7 +247,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 89:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(14)(false);
@@ -227,7 +262,7 @@ exports.push([module.i, "@keyframes animate__container--drop-fade-in {\n  0% {\n
 
 /***/ }),
 
-/***/ 90:
+/***/ 91:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -240,9 +275,11 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _time = _interopRequireDefault(__webpack_require__(91));
+var _reactRouterDom = __webpack_require__(17);
 
-__webpack_require__(92);
+var _time = _interopRequireDefault(__webpack_require__(92));
+
+__webpack_require__(93);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -280,11 +317,13 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         className: "index-page__card"
+      }, _react.default.createElement(_reactRouterDom.Link, {
+        to: this.props.url
       }, _react.default.createElement("div", {
         className: "index-page__card-title"
       }, this.props.title), _react.default.createElement("div", {
         className: "index-page__card-subtitle"
-      }, this.props.subtitle), _react.default.createElement("div", {
+      }, this.props.subtitle)), _react.default.createElement("div", {
         className: "index-page__card-date"
       }, this.props.createdAt && _time.default.since(this.props.createdAt)));
     }
@@ -298,7 +337,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -358,13 +397,13 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 92:
+/***/ 93:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(93);
+var content = __webpack_require__(94);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -372,7 +411,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(22)(content, options);
+var update = __webpack_require__(27)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -390,7 +429,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 93:
+/***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(14)(false);
@@ -398,14 +437,14 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, ".index-page__card {\n  margin: var(--spacing-4);\n  padding: var(--spacing-2);\n  position: relative;\n  color: var(--color-foreground);\n  transition: color var(--animation-duration-fast) ease-in-out;\n  cursor: pointer;\n}\n\n.index-page__card:hover {\n  color: var(--color-primary-default);\n}\n\n.index-page__card::before {\n  content: '';\n  position: absolute;\n  top: 0px; left: 0px;\n  height: 100%; width: 15rem;\n  border-top: var(--spacing-1) solid var(--color-foreground);\n}\n\n.index-page__card-title {\n  font-size: var(--font-size-5);\n  font-weight: var(--font-weight-extra-bold);\n  font-family: var(--font-family-secondary);\n}\n\n.index-page__card-subtitle {\n  font-size: var(--font-size-3);\n  /*font-family: var(--font-family-secondary);*/\n}\n\n.index-page__card-date {\n  position: absolute;\n  top: 0px; left: 1rem;\n  background-color: var(--color-background);\n  padding: 0 var(--spacing-2);\n  transform: translate(0%, -50%);\n  color: var(--color-foreground);\n}\n", ""]);
+exports.push([module.i, ".index-page__card {\n  margin: var(--spacing-3);\n  padding: var(--spacing-2);\n  position: relative;\n  color: var(--color-foreground);\n  transition: color var(--animation-duration-fast) ease-in-out;\n  cursor: pointer;\n}\n\n.index-page__card:hover {\n  color: var(--color-primary-default);\n}\n\n.index-page__card::before {\n  content: '';\n  position: absolute;\n  top: 0px; left: 0px;\n  height: 100%; width: 15rem;\n  border-top: var(--spacing-1) solid var(--color-foreground);\n  z-index: -1;\n}\n\n.index-page__card-title {\n  font-size: var(--font-size-5);\n  font-weight: var(--font-weight-extra-bold);\n  font-family: var(--font-family-secondary);\n}\n\n.index-page__card-subtitle {\n  font-size: var(--font-size-3);\n}\n\n.index-page__card-date {\n  position: absolute;\n  top: 0px; left: 1rem;\n  background-color: var(--color-background);\n  padding: 0 var(--spacing-2);\n  transform: translate(0%, -50%);\n  color: var(--color-foreground);\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 94:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -418,7 +457,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-__webpack_require__(95);
+__webpack_require__(96);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -446,14 +485,21 @@ function (_React$Component) {
   _inherits(IndexPageContainer, _React$Component);
 
   function IndexPageContainer(props) {
+    var _this;
+
     _classCallCheck(this, IndexPageContainer);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(IndexPageContainer).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(IndexPageContainer).call(this, props));
+    _this.state = {
+      controlsOpen: false
+    };
+    return _this;
   }
 
   _createClass(IndexPageContainer, [{
     key: "render",
     value: function render() {
+      var controlsOpen = this.state.controlsOpen;
       return _react.default.createElement("div", {
         className: "index-page__container"
       }, _react.default.createElement("div", {
@@ -470,13 +516,13 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 95:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(96);
+var content = __webpack_require__(97);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -484,7 +530,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(22)(content, options);
+var update = __webpack_require__(27)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -502,7 +548,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 96:
+/***/ 97:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(14)(false);
@@ -510,7 +556,7 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, ".index-page__container {\n  margin-top: 6rem;\n  padding: var(--spacing-0) var(--spacing-7);\n}\n\n.index-page__title {\n  font-family: var(--font-family-secondary);\n  font-weight: var(--font-weight-extra-bold);\n  font-size: var(--font-size-header);\n}\n", ""]);
+exports.push([module.i, ".index-page__container {\n  margin-top: calc(1.5 * var(--spacing-5));\n  padding: var(--spacing-0) var(--spacing-5);\n}\n\n.index-page__title {\n  font-family: var(--font-family-secondary);\n  font-weight: var(--font-weight-extra-bold);\n  font-size: var(--font-size-6);\n  flex-grow: 0;\n}\n", ""]);
 
 // exports
 

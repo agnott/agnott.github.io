@@ -23,9 +23,9 @@
 }
 
 .header__link {
+  position: relative;
   padding: 0 var(--spacing-2);
   margin: 0 var(--spacing-1);
-  border-radius: var(--spacing-1);
   font-size: var(--font-size-3);
   cursor: pointer;
   transition: all var(--animation-duration-default) ease-in-out;
@@ -35,7 +35,7 @@
   color: var(--color-secondary-default);
 }
 
-.header__link:hover, .header .header__link:active {
+.header__link:hover, .header__link:active {
   color: var(--color-primary-default);
 }
 

@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-import '../../../../css/pages/index/container.css';
 class IndexPageContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -13,8 +11,8 @@ class IndexPageContainer extends React.Component {
     const { controlsOpen } = this.state;
 
     return (
-      <div className="index-page__container">
-        <div className="index-page__title">{this.props.title}</div>
+      <div className="page__container">
+        <div className="page__title">{this.props.title}</div>
         { this.props.children }
       </div>
     );

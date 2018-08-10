@@ -9,7 +9,7 @@ class Routes extends React.Component {
       <Switch>
         <Route exact path="/:type(labs|blog)/:name" component={DynamicImporter} />
         <Route exact path="/:type(labs|blog)" component={DynamicImporter} />
-        <Route path="/" component={(props) => <DynamicImporter {...props} type="home" name="home" />} />
+        <Route path="/" component={(props) => <DynamicImporter {...props} type="about" name="about" />} />
       </Switch>
     );
   }

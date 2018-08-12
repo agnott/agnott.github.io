@@ -21,7 +21,7 @@ const PatternBlock = () => {
     gradients.up.lines.push({
       color: pallete[Math.floor(Math.random() * pallete.length)],
       width: 10 + Math.random() * 10,
-      spacing: 10 + Math.random() * 10,
+      spacing: 0,
       start: lastLine ? lastLine.start + lastLine.width + lastLine.spacing : 0,
     });
   }

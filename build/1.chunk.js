@@ -88,11 +88,11 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _AnimateLoad = _interopRequireDefault(__webpack_require__(88));
+var _AnimateLoad = _interopRequireDefault(__webpack_require__(91));
 
-var _IndexPageCard = _interopRequireDefault(__webpack_require__(91));
+var _IndexPageCard = _interopRequireDefault(__webpack_require__(94));
 
-var _IndexPageContainer = _interopRequireDefault(__webpack_require__(95));
+var _IndexPageContainer = _interopRequireDefault(__webpack_require__(98));
 
 var _data = _interopRequireDefault(__webpack_require__(15));
 
@@ -131,7 +131,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return _react.default.createElement(_IndexPageContainer.default, {
-        title: "Blogs"
+        title: "Blog"
       }, _data.default.map(function (article, i) {
         return _react.default.createElement(_AnimateLoad.default, {
           key: article.id,
@@ -149,7 +149,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 88:
+/***/ 91:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -162,7 +162,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-__webpack_require__(89);
+__webpack_require__(92);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -215,13 +215,13 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 89:
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(90);
+var content = __webpack_require__(93);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -247,10 +247,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 90:
+/***/ 93:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(false);
+exports = module.exports = __webpack_require__(10)(false);
 // imports
 
 
@@ -262,7 +262,7 @@ exports.push([module.i, "@keyframes animate__container--drop-fade-in {\n  0% {\n
 
 /***/ }),
 
-/***/ 91:
+/***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -277,9 +277,9 @@ var _react = _interopRequireDefault(__webpack_require__(0));
 
 var _reactRouterDom = __webpack_require__(17);
 
-var _time = _interopRequireDefault(__webpack_require__(92));
+var _time = _interopRequireDefault(__webpack_require__(95));
 
-__webpack_require__(93);
+__webpack_require__(96);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -337,7 +337,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 92:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -397,13 +397,13 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 93:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(94);
+var content = __webpack_require__(97);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -429,10 +429,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 94:
+/***/ 97:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(14)(false);
+exports = module.exports = __webpack_require__(10)(false);
 // imports
 
 
@@ -444,7 +444,7 @@ exports.push([module.i, ".index-page__card {\n  margin: var(--spacing-3);\n  pad
 
 /***/ }),
 
-/***/ 95:
+/***/ 98:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -456,8 +456,6 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
-
-__webpack_require__(96);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -501,9 +499,9 @@ function (_React$Component) {
     value: function render() {
       var controlsOpen = this.state.controlsOpen;
       return _react.default.createElement("div", {
-        className: "index-page__container"
+        className: "page__container"
       }, _react.default.createElement("div", {
-        className: "index-page__title"
+        className: "page__title"
       }, this.props.title), this.props.children);
     }
   }]);
@@ -513,53 +511,6 @@ function (_React$Component) {
 
 var _default = IndexPageContainer;
 exports.default = _default;
-
-/***/ }),
-
-/***/ 96:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(97);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(27)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./container.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./container.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(14)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".index-page__container {\n  margin-top: calc(1.5 * var(--spacing-5));\n  padding: var(--spacing-0) var(--spacing-5);\n}\n\n.index-page__title {\n  font-family: var(--font-family-secondary);\n  font-weight: var(--font-weight-extra-bold);\n  font-size: var(--font-size-6);\n  flex-grow: 0;\n}\n", ""]);
-
-// exports
-
 
 /***/ })
 

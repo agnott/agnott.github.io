@@ -9,7 +9,7 @@ import data from './data';
 class BlogsIndex extends React.Component {
   render() {
     return (
-      <IndexPageContainer title="Blogs">
+      <IndexPageContainer title="Blog">
         {
           data.map((article, i) => (
             <AnimateLoad key={article.id} offset={i * 125}>

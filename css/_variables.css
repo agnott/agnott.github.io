@@ -8,16 +8,16 @@
   --color-foreground-muted: rgb(var(--color-foreground-muted-source));
 
   --color-primary-background-source: 36, 170, 204;
-  --color-primary-default-source: 40, 190, 225;
-  --color-primary-foreground-source: 45, 45, 45;
+  --color-primary-default-source: 0, 96, 242;
+  --color-primary-foreground-source: 255, 255, 255;
 
   --color-primary-background: rgb(var(--color-primary-background-source));
   --color-primary-default: rgb(var(--color-primary-default-source));
   --color-primary-foreground: rgb(var(--color-primary-foreground-source));
 
   --color-secondary-background-source: 206, 136, 55;
-  --color-secondary-default-source: 255, 171, 76;
-  --color-secondary-foreground-source: 45, 45, 45;
+  --color-secondary-default-source: 242, 88, 0;
+  --color-secondary-foreground-source: 255, 255, 255;
 
   --color-secondary-background: rgb(var(--color-secondary-background-source));
   --color-secondary-default: rgb(var(--color-secondary-default-source));

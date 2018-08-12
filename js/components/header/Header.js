@@ -33,21 +33,24 @@ class Header extends React.Component {
     return (
       <header className={`header ${this.state.shrunk ? 'header--shrunk' : ''}`}>
         <div className="header__link header__link--bold card">
-          <Link to="/">Andrew Gnott</Link>
+          <Link to="/blog">Andrew Gnott</Link>
         </div>
         <div className="header__link-container">
-          <NavLink to="/labs" className="header__link" activeClassName="header__link--active">
-            Labs
-          </NavLink>
           <NavLink to="/blog" className="header__link" activeClassName="header__link--active">
             Blog
           </NavLink>
-          <div className="header__link">
-            Contact
-          </div>
-          <NavLink to="/about" className="header__link" activeClassName="header__link--active">
-            About
+          <NavLink to="/labs" className="header__link" activeClassName="header__link--active">
+            Labs
           </NavLink>
+          <NavLink to="/contact" className="header__link" activeClassName="header__link--active">
+            Contact
+          </NavLink>
+          {
+            false &&
+            <NavLink to="/about" className="header__link" activeClassName="header__link--active">
+              About
+            </NavLink>
+          }
         </div>
       </header>
     );

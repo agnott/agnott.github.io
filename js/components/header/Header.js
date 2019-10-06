@@ -33,7 +33,7 @@ class Header extends React.Component {
     return (
       <header className={`header ${this.state.shrunk ? 'header--shrunk' : ''}`}>
         <div className="header__link header__link--bold card">
-          <Link to="/blog">Andrew Gnott</Link>
+          <Link to="/blog">The Layman</Link>
         </div>
         <div className="header__link-container">
           <NavLink to="/blog" className="header__link" activeClassName="header__link--active">

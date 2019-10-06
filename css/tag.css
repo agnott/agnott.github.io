@@ -1,0 +1,10 @@
+.tag__container {
+  display: inline-block;
+  padding: var(--spacing-1);
+  margin: var(--spacing-3) var(--spacing-2) 0 0;
+  background-color: var(--color-secondary-default);
+  color: var(--color-secondary-foreground);
+  font-size: var(--font-size-2);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+}

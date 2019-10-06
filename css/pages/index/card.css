@@ -4,10 +4,13 @@
   position: relative;
   color: var(--color-foreground);
   transition: color var(--animation-duration-fast) ease-in-out;
+}
+
+.index-page__card-inner {
   cursor: pointer;
 }
 
-.index-page__card:hover {
+.index-page__card-inner:hover {
   color: var(--color-primary-default);
 }
 

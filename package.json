@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --watch-poll",
     "build": "webpack",
-    "build-deploy": "webpack; git add ./build/; git commit -m \"BLD: Automated build\"; git push origin master"
+    "build-deploy": "webpack; git add ./build/; git commit -m \"release(build): automated build\"; git push origin master"
   },
   "repository": {
     "type": "git",

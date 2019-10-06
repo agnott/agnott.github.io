@@ -3,9 +3,9 @@ const glob = require('glob');
 
 const PATHS = {
   INPUT: {
-    JS: `${__dirname}/js`
+    JS: `${__dirname}/js`,
   },
-  OUTPUT: `${__dirname}/build`
+  OUTPUT: `${__dirname}/build`,
 };
 
 module.exports = {
@@ -20,25 +20,27 @@ module.exports = {
     chunkFilename: '[name].chunk.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         loader: 'babel-loader',
         query: {
           presets: ['@babel/preset-env', '@babel/preset-react'],
-          plugins: [require('@babel/plugin-syntax-dynamic-import'), require('@babel/plugin-proposal-object-rest-spread')]
-        }
-      }, {
+          plugins: [
+            require('@babel/plugin-syntax-dynamic-import'),
+            require('@babel/plugin-proposal-object-rest-spread'),
+            require('@babel/plugin-proposal-class-properties'),
+          ],
+        },
+      },
+      {
         test: /\.css$/,
-        loaders: [
-          'style-loader',
-          'css-loader'
-        ]
-      }
-    ]
+        loaders: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   devServer: {
     port: 8080,
     contentBase: './',
-  }
+  },
 };

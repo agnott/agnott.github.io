@@ -5,12 +5,6 @@ import Header from './header/Header';
 import Routes from './Routes';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { loaded: false };
-  }
-
   render() {
 
     return (

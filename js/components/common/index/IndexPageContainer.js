@@ -1,20 +1,13 @@
 import React from 'react';
+import PageContainer from '../page/PageContainer';
 
 class IndexPageContainer extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { controlsOpen: false };
-  }
-
   render() {
-    const { controlsOpen } = this.state;
-
     return (
-      <div className="page__container">
+      <PageContainer>
         <div className="page__title">{this.props.title}</div>
         { this.props.children }
-      </div>
+      </PageContainer>
     );
   }
 }

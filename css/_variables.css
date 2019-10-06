@@ -8,7 +8,7 @@
   --color-foreground-muted: rgb(var(--color-foreground-muted-source));
 
   --color-primary-background-source: 36, 170, 204;
-  --color-primary-default-source: 0, 96, 242;
+  --color-primary-default-source: 0, 105, 125;
   --color-primary-foreground-source: 255, 255, 255;
 
   --color-primary-background: rgb(var(--color-primary-background-source));

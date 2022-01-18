@@ -1,27 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Colors, Fonts, Spacing } from '../design-system';
-
-const AnimateSlideIn = keyframes`
-  from {
-    opacity: 0.5;
-    transform: translate(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0%);
-  }
-`;
 
 const HeaderContainer = styled.header`
   background-color: ${Colors.solids.raisinBlack};
-  padding: ${Spacing.medium}px;
+  padding: ${Spacing.small}px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  animation: 1.5s ease-in-out 0s ${AnimateSlideIn};
   position: sticky;
   top: 0px;
   z-index: 2;
@@ -57,8 +45,8 @@ export const NavBar: React.FC = () => {
 
   return (
     <HeaderContainer>
-      <Link href="/other" passHref>
-        <HeaderLink active={route.pathname === '/other'}>other</HeaderLink>
+      <Link href="/projects" passHref>
+        <HeaderLink active={route.pathname === '/projects'}>projects</HeaderLink>
       </Link>
 
       <Link href="/" passHref>

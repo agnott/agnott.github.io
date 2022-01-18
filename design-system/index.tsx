@@ -54,6 +54,11 @@ function createFontStyle(type: 'light' | 'regular' | 'bold', fontSize: number, f
     font-size: ${fontSize}px;
     font-weight: ${fontWeight};
     line-height: ${1.25 * fontSize}px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: ${fontSize * 1.25}px;
+      line-height: ${1.25 * 1.25 * fontSize}px;
+    }
   `;
 }
 

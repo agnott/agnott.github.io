@@ -53,7 +53,7 @@ function createFontStyle(type: 'light' | 'regular' | 'bold', fontSize: number, f
     font-family: ${type === 'bold' ? "'Playfair Display', serif" : "'Open-Sans', sans-serif"};
     font-size: ${fontSize}px;
     font-weight: ${fontWeight};
-    line-height: ${1.1 * fontSize}px;
+    line-height: ${1.25 * fontSize}px;
   `;
 }
 

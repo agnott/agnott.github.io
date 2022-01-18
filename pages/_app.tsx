@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: ${Colors.solids.oldLace};
+    background-color: ${Colors.solids.raisinBlack};
 
     font-family: 'Open Sans', sans-serif;
   }
@@ -25,15 +25,6 @@ const GlobalStyle = createGlobalStyle`
   h1, h2, h3 {
     margin: 0px;
   }
-`;
-
-const BackgroundContainer = styled.div`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  background-color: ${Colors.solids.oldLace};
-  overflow: hidden;
 `;
 
 const LeftContentContainer = styled.div`
@@ -81,7 +72,7 @@ const LogoImage = styled.svg`
 `;
 const Separator = styled.div`
   text-align: center;
-  margin: ${Spacing.xSmall}px;
+  padding: ${Spacing.xSmall}px;
 
   &::after {
     content: '';
@@ -127,7 +118,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <React.Fragment>
       <GlobalStyle />
       <Page>
-        <BackgroundContainer />
         <ContentContainer>
           <LeftContentContainer>
             <LeftContent>

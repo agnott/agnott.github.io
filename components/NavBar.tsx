@@ -1,5 +1,6 @@
-import { useRouter } from 'next/router';
 import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styled, { keyframes } from 'styled-components';
 import { Colors, Fonts, Spacing } from '../design-system';
 
@@ -54,16 +55,17 @@ const HeaderLink = styled.a<{ active: boolean }>`
 export const NavBar: React.FC = () => {
   const route = useRouter();
 
-  console.log(route.pathname);
-
   return (
     <HeaderContainer>
-      <HeaderLink active={false}>
-        other
-      </HeaderLink>
-      <HeaderLink active>
-        resume
-      </HeaderLink>
+      <Link href="/other" passHref>
+        <HeaderLink active={route.pathname === '/other'}>other</HeaderLink>
+      </Link>
+
+      <Link href="/" passHref>
+        <HeaderLink href="/" active={route.pathname === '/'}>
+          resume
+        </HeaderLink>
+      </Link>
     </HeaderContainer>
   );
 };

@@ -31,8 +31,8 @@ const LeftContentContainer = styled.div`
   flex: 1;
   padding: ${Spacing.large}px;
   background-color: ${Colors.solids.raisinBlack};
-  min-width: 500px;
-  z-index: 2;
+  min-width: 600px;
+  z-index: 3;
 `;
 
 const LeftContent = styled.div`

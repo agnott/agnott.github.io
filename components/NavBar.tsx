@@ -18,13 +18,13 @@ const AnimateSlideIn = keyframes`
 const HeaderContainer = styled.header`
   background-color: ${Colors.solids.raisinBlack};
   padding: ${Spacing.medium}px;
-  margin: ${Spacing.small}px ${Spacing.small}px ${Spacing.small}px 0px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   animation: 1.5s ease-in-out 0s ${AnimateSlideIn};
   position: sticky;
-  top: ${Spacing.small}px;
+  top: 0px;
+  z-index: 2;
 `;
 
 const HeaderLink = styled.a<{ active: boolean }>`

@@ -115,7 +115,7 @@ const SKILLS = orderBy(
     { name: 'AWS', rating: 8 },
     { name: 'GraphQL', rating: 6 },
     { name: 'Postgres', rating: 6 },
-    { name: 'Kafka', rating: 5 },
+    { name: 'Kafka', rating: 4 },
     { name: 'Redis', rating: 9 },
     { name: 'Elasticsearch', rating: 7 },
     { name: 'Datadog', rating: 8 },

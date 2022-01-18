@@ -70,7 +70,7 @@ const SkillBar = styled.div<{ rating: number }>`
 `;
 
 const EntryContainer = styled.div`
-  margin: ${Spacing.medium}px ${Spacing.xxLarge}px ${Spacing.medium}px ${Spacing.medium}px;
+  margin: ${Spacing.medium}px;
   color: ${Colors.solids.raisinBlack};
 
   & a {

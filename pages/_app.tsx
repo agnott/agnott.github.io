@@ -110,7 +110,7 @@ const ContentContainer = styled.div`
 const RightContentContainer = styled.div`
   flex: 1.5;
   background-color: ${Colors.solids.oldLace};
-  min-width: 500px;
+  min-width: 600px;
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {

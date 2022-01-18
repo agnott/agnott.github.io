@@ -7,6 +7,7 @@ import {
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
@@ -23,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     background-color: ${Colors.solids.raisinBlack};
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
 
   *, * > * {
@@ -42,17 +43,17 @@ const GlobalStyle = createGlobalStyle`
 function MyApp({ Component, pageProps }: AppProps) {
   const route = useRouter();
 
-  const isRaw = Boolean(route.query?.raw);
-
-  console.log(route, isRaw);
+  const isRaw = Boolean(route.query?.printable);
+  const isResume = route.pathname === '/resume';
 
   return (
     <React.Fragment>
       <GlobalStyle />
-      {isRaw ? (
-        <RightContentContainer>
-          <Component {...pageProps} />
-        </RightContentContainer>
+      <Head>
+        <link rel="icon" href="/face-icon.svg" />
+      </Head>
+      {isRaw || isResume ? (
+        <Component {...pageProps} />
       ) : (
         <Page>
           <ContentContainer>
@@ -203,6 +204,8 @@ const BioContainer = styled.div`
 
   @media only screen and (max-width: 800px) {
     text-align: left;
+    font-size: 36px;
+    line-height: ${1.25 * 1.25 * 36}px;
   }
 `;
 

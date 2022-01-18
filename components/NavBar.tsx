@@ -50,7 +50,7 @@ export const NavBar: React.FC = () => {
       </Link>
 
       <Link href="/" passHref>
-        <HeaderLink href="/" active={route.pathname === '/'}>
+        <HeaderLink href="/" active={['/', '/resume'].includes(route.pathname)}>
           resume
         </HeaderLink>
       </Link>

@@ -23,5 +23,4 @@ export default ResumePage;
 
 const ResumeContainer = styled.div`
   background-color: ${Colors.solids.oldLace};
-  padding: ${Spacing.small}px;
 `;

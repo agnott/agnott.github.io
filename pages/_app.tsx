@@ -136,11 +136,23 @@ function MyApp({ Component, pageProps }: AppProps) {
 export default MyApp;
 
 const LeftContentContainer = styled.div`
+  position: relative;
   flex: 1;
   padding: ${Spacing.large}px;
   background-color: ${Colors.solids.raisinBlack};
   min-width: 800px;
   z-index: 3;
+
+  @media only screen and (max-width: 800px) {
+    min-width: 100%;
+  }
+`;
+
+const RightContentContainer = styled.div`
+  position: relative;
+  flex: 2;
+  background-color: ${Colors.solids.oldLace};
+  min-width: 800px;
 
   @media only screen and (max-width: 800px) {
     min-width: 100%;
@@ -204,8 +216,8 @@ const BioContainer = styled.div`
 
   @media only screen and (max-width: 800px) {
     text-align: left;
-    font-size: 36px;
-    line-height: ${1.25 * 1.25 * 36}px;
+    font-size: 24px;
+    line-height: ${32}px;
   }
 `;
 
@@ -242,15 +254,5 @@ const LinkIcon = styled(FontAwesomeIcon)`
   &:hover,
   &:active {
     color: ${Colors.solids.polishedPine};
-  }
-`;
-
-const RightContentContainer = styled.div`
-  flex: 2;
-  background-color: ${Colors.solids.oldLace};
-  min-width: 800px;
-
-  @media only screen and (max-width: 800px) {
-    min-width: 100%;
   }
 `;

@@ -49,16 +49,16 @@ function getColors() {
 }
 
 function createFontStyle(type: 'light' | 'regular' | 'bold', fontSize: number, fontWeight: number) {
+  const mobileScalar = 0.85;
+
   return `
     font-family: ${type === 'bold' ? "'Playfair Display', serif" : "'Open-Sans', sans-serif"};
-    font-size: ${fontSize}px;
+    font-size: ${fontSize / 14}em;
     font-weight: ${fontWeight};
-    line-height: ${1.25 * fontSize}px;
     color: ${Colors.solids.raisinBlack};
 
     @media only screen and (max-width: 600px) {
-      font-size: ${fontSize * 1.25}px;
-      line-height: ${1.25 * 1.25 * fontSize}px;
+      font-size: ${mobileScalar * fontSize / 14}em;
     }
   `;
 }
@@ -101,24 +101,68 @@ function getFonts() {
   } as const;
 }
 
+const source = {
+  none: 0,
+  hairline: 1,
+  // sdfs
+  xxxxSmall: 2,
+  xxxSmall: 4,
+  xxSmall: 8,
+  xSmall: 16,
+  small: 24,
+  medium: 32,
+  large: 36,
+  xLarge: 42,
+  xxLarge: 64,
+  xxxLarge: 72,
+  xxxxLarge: 120,
+} as const;
+
+type PxSpacing = {
+  [key in keyof typeof source]: string;
+};
+type EmSpacing = {
+  [key in keyof typeof source]: string;
+};
+
 function getSpacing() {
   return {
-    none: 0,
-    hairline: 1,
-    // sdfs
-    xxxxSmall: 2,
-    xxxSmall: 4,
-    xxSmall: 8,
-    xSmall: 16,
-    small: 24,
-    medium: 32,
-    large: 36,
-    xLarge: 42,
-    xxLarge: 64,
-    xxxLarge: 72,
-    xxxxLarge: 120,
+    ...source,
+    px: Object.entries(source).reduce(
+      (acc, [key, value]) => ({
+        ...acc,
+        [key]: `${value}px`,
+      }),
+      {}
+    ) as PxSpacing,
+    em: Object.entries(source).reduce(
+      (acc, [key, value]) => ({
+        ...acc,
+        [key]: `${value / 14}em`,
+      }),
+      {}
+    ) as EmSpacing,
+    rem: Object.entries(source).reduce(
+      (acc, [key, value]) => ({
+        ...acc,
+        [key]: `${value / 14}rem`,
+      }),
+      {}
+    ) as EmSpacing,
     invert(spacing: number) {
       return -1 * spacing;
+    },
+    add(unit: 'rem' | 'em' | 'px' | 'numeric', s1: any, s2: any) {
+      if (unit === 'rem') {
+        return `${parseFloat(s1.replace('rem', '')) + parseFloat(s2.replace('rem', ''))}rem`;
+      }
+      if (unit === 'em') {
+        return `${parseFloat(s1.replace('em', '')) + parseFloat(s2.replace('em', ''))}em`;
+      }
+      if (unit === 'px') {
+        return `${parseFloat(s1.replace('px', '')) + parseFloat(s2.replace('px', ''))}px`;
+      }
+      return s1 + s2;
     },
   } as const;
 }

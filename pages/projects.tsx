@@ -59,7 +59,7 @@ const Resume: NextPage = () => {
       <ProjectContainer>
         <ProjectName>Achiever</ProjectName>
         <ProjectDescription>
-          An app where users can create missions and accomplish them while sharing their experience
+          A mobile app where users can create missions and accomplish them while sharing their experience
           with a community of users working toward the same goals. Leverages GraphQL + Apollo for a
           next-level user experience.
         </ProjectDescription>
@@ -67,7 +67,7 @@ const Resume: NextPage = () => {
       <ProjectContainer>
         <ProjectName>Moody</ProjectName>
         <ProjectDescription>
-          An app where users&apos; emotions are the social currency. Turn the negative vibes
+          A mobile app where users&apos; emotions are the social currency. Turn the negative vibes
           positive via various in-app exercises. Leverages AWS Comprehend for sentiment and subject
           analysis.
         </ProjectDescription>
@@ -75,7 +75,7 @@ const Resume: NextPage = () => {
       <ProjectContainer>
         <ProjectName>Copynator</ProjectName>
         <ProjectDescription>
-          An app to empower non-engineers to handle copy and translations for their apps. Leverages
+          A web app to empower non-engineers to handle copy and translations for their apps. Leverages
           AWS S3 + Cloudfront + API Gateway to deliver the proper content to the end-user and a UI
           for configuration.
         </ProjectDescription>
@@ -83,7 +83,7 @@ const Resume: NextPage = () => {
       <ProjectContainer>
         <ProjectName>Angle</ProjectName>
         <ProjectDescription>
-          A community-driven, sports-writing app. Allows writers to create interactive stories via
+          A community-driven, sports-writing mobile app. Allows writers to create interactive stories via
           markdown with various widgets. Allows users to support writers via microdonations powered
           by Stripe and in-app currency.
         </ProjectDescription>

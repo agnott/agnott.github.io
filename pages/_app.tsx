@@ -88,11 +88,9 @@ function MyApp({ Component, pageProps }: AppProps) {
                   <BioUnderline>leader</BioUnderline>
                   {'. i enjoy making apps better by '}
                   <BioUnderline>shipping</BioUnderline>
-                  {
-                    " impactful code. whether it's familiar technology or not, i believe in the power of "
-                  }
+                  {" impactful code. whether it's familiar technology or not, i believe "}
                   <BioUnderline>collaboration</BioUnderline>
-                  {' to fill the gaps.'}
+                  {' will fill in the gaps.'}
                 </BioContainer>
                 <Separator />
                 <FooterContainer>
@@ -177,6 +175,7 @@ const AvatarImage = styled.div`
   height: 120px;
   margin-bottom: ${Spacing.xxSmall}px;
   border-radius: 64px;
+  background-color: ${Colors.solids.mediumLiver};
   background: url('/profile-new.png');
   background-size: cover;
   box-shadow: inset 0px 0px 12px 4px ${Colors.solids.black};

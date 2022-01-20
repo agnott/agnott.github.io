@@ -325,7 +325,7 @@ const FooterIcon = styled.svg`
 `;
 
 const Name = styled.div`
-  ${Fonts.bold[800]}
+  ${Fonts.bold[900]}
   color: ${Colors.solids.oldLace};
 `;
 
@@ -343,6 +343,7 @@ const DetailsContainer = styled.div`
 `;
 
 const DetailItem = styled.div`
+  ${Fonts.regular[200]}
   display: flex;
   align-items: center;
   color: ${Colors.solids.oldLace};

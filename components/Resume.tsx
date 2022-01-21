@@ -67,11 +67,11 @@ const Resume: React.FC<{ hideHeader?: boolean }> = ({ hideHeader = false }) => {
           <SectionName>Summary</SectionName>
           <Overview>
             Results-oriented software engineer with multiple years of web client, app client, and
-            server experience. Has grown alongside and helped scale Cameo into 400+ person company
-            with a billion-dollar valuation. A bias for action and eagerness to learn lead to
-            promptly-delivered and well-designed features that make a difference for users. Thrives
-            in fast-paced environments with abstract requirements. A natural leader always looking
-            to collaboratively build the best products possible.
+            server experience. Has grown alongside and helped scale Cameo from around 25 employees
+            to 400+ with a billion-dollar valuation. A bias for action and eagerness to learn lead
+            to promptly-delivered and well-designed features that make a difference for users.
+            Thrives in fast-paced environments with abstract requirements. A natural leader always
+            looking to collaboratively build the best products possible.
           </Overview>
           <Separator />
         </EntryContainer>
@@ -119,16 +119,17 @@ const Resume: React.FC<{ hideHeader?: boolean }> = ({ hideHeader = false }) => {
           </PositionContainer>
           <PositionDetails>
             <PositionDetail>
-              Served as the initial lead for the Messaging team. Collaborated and supervised a team
-              of up to four engineers. Designed and implemented the initial messaging feature, which
-              has evolved to support Fan Clubs &ndash; controlled, feature-rich group chats of
+              Served as the initial lead for the Messaging team. Collaborated with and supervised a
+              team of up to four engineers. Designed and implemented the initial messaging feature,
+              which has evolved to support Fan Clubs &ndash; controlled, feature-rich group chats of
               50,000+ users.
             </PositionDetail>
             <PositionDetail>
-              Served as the initial lead for the Growth team. Collaborated and supervised a team of
-              up to three engineers. Designed and implemented multiple high-impact experiments,
-              third-party modules for deep linking and experimentation, and a promotion framework
-              allowing the marketing team to provide discounts across arbitrary talent audiences.
+              Served as the initial lead for the Growth team. Collaborated with and supervised a
+              team of up to three engineers. Designed and implemented multiple high-impact
+              experiments, third-party modules for deep linking and experimentation, and a promotion
+              framework allowing the marketing team to provide discounts across arbitrary talent
+              audiences.
             </PositionDetail>
             <PositionDetail>
               Founding member of the App Platform Guild &ndash; a small group of engineers focused

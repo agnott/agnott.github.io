@@ -67,11 +67,11 @@ const Resume: React.FC<{ hideHeader?: boolean }> = ({ hideHeader = false }) => {
           <SectionName>Summary</SectionName>
           <Overview>
             Results-oriented software engineer with multiple years of web client, app client, and
-            server experience. Has helped build and scale a small startup into a billion-dollar
-            business. A bias for action and eagerness to learn lead to promptly-delivered and
-            well-designed features that make a difference for users. Thrives in fast-paced
-            environments with abstract requirements. A natural leader always looking to
-            collaboratively build the best products possible.
+            server experience. Has grown alongside and helped scale Cameo into 400+ person company
+            with a billion-dollar valuation. A bias for action and eagerness to learn lead to
+            promptly-delivered and well-designed features that make a difference for users. Thrives
+            in fast-paced environments with abstract requirements. A natural leader always looking
+            to collaboratively build the best products possible.
           </Overview>
           <Separator />
         </EntryContainer>

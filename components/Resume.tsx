@@ -221,6 +221,22 @@ const Resume: React.FC<{ hideHeader?: boolean }> = ({ hideHeader = false }) => {
           <Separator />
         </EntryContainer>
         <EntryContainer>
+          <CompanyDetailsContainer>
+            <CompanyName>University of Notre Dame</CompanyName>
+            <Location>(Notre Dame, IN)</Location>
+          </CompanyDetailsContainer>
+          <PositionContainer>
+            <PositionName>B.S. Computer Science</PositionName>
+            <PositionDates>Aug 2013 - May 2017</PositionDates>
+          </PositionContainer>
+          <PositionDetails>
+            <PositionDetail>
+              Graduated <i>cum laude</i> with a 3.72 GPA.
+            </PositionDetail>
+          </PositionDetails>
+          <Separator />
+        </EntryContainer>
+        <EntryContainer>
           <SectionName>Skills</SectionName>
           <SkillsContainer>
             {SKILLS.map(({ name, rating }) => (
